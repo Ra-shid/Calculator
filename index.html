@@ -26,40 +26,40 @@
                 <input type="button" class="button" name="memory-plus" value="mp" onclick="" title="Adds the value displayed on screen to the memory.">
             </div>
             <div class="section-row">
-                <input type="button" class="button" name="All Clear" value="AC" onclick="" title="AC is All Clear; CE is Clear Entry; press once to clear current entry, Press twice to Clear All">
-                <input type="button" class="button" name="root2" value="√x" onclick="" title="Calculates the square root of the diaplayed number.">
-                <input type="button" class="button" name="percentageButton" value="%" onclick="" title="Converts the displayed value as percentage and displays its decimal equivalent.">
-                <input type="button" class="button" name="divide" value="÷" onclick="" title="Divide (press /)">
+                <input type="button" class="button" name="All Clear" value="AC" onclick="clearAll()" title="AC is All Clear; CE is Clear Entry; press once to clear current entry, Press twice to Clear All">
+                <input type="button" class="button" name="root2" value="√x" onclick="Math.sqrt(equal())" title="Calculates the square root of the diaplayed number.">
+                <input type="button" class="button" name="percentageButton" value="%" onclick="insertValue('%')" title="Converts the displayed value as percentage and displays its decimal equivalent.">
+                <input type="button" class="button" name="divide" value="÷" onclick="insertValue('/')" title="Divide (press /)">
             </div>
             <div class="section-row">
-                <input type="button" class="button number" name="seven" value="7" onclick="enterValue('7')">
-                <input type="button" class="button number" name="eight" value="8" onclick="enterValue('8')" >
-                <input type="button" class="button number" name="nine" value="9" onclick="enterValue('9')">
-                <input type="button" class="button operator" name="multiply" value="x" onclick="" title="Multiply (press *)">
+                <input type="button" class="button number" name="seven" value="7" onclick="insertValue(7)">
+                <input type="button" class="button number" name="eight" value="8" onclick="insertValue(8)" >
+                <input type="button" class="button number" name="nine" value="9" onclick="insertValue(9)">
+                <input type="button" class="button operator" name="multiply" value="x" onclick="insertValue('*')" title="Multiply (press *)">
             </div>
             <div class="section-row">
-                <input type="button" class="button number" name="four" value="4" onclick="enterValue('4')">
-                <input type="button" class="button number" name="five" value="5" onclick="enterValue('5')">
-                <input type="button" class="button number" name="six" value="6" onclick="enterValue('6')">
-                <input type="button" class="button operator" name="subtract" value="-" onclick="">
+                <input type="button" class="button number" name="four" value="4" onclick="insertValue(4)">
+                <input type="button" class="button number" name="five" value="5" onclick="insertValue(5)">
+                <input type="button" class="button number" name="six" value="6" onclick="insertValue(6)">
+                <input type="button" class="button operator" name="subtract" value="-" onclick="insertValue('-')">
             </div>
             <div class="section-row">
-                <input type="button" class="button number" name="one" value="1" onclick="enterValue('1')">
-                <input type="button" class="button number" name="two" value="2" onclick="enterValue('2')">
-                <input type="button" class="button number" name="three" value="3" onclick="enterValue('3')">
-                <input type="button" class="button operator" name="add" value="+" onclick="">
+                <input type="button" class="button number" name="one" value="1" onclick="insertValue(1)">
+                <input type="button" class="button number" name="two" value="2" onclick="insertValue(2)">
+                <input type="button" class="button number" name="three" value="3" onclick="insertValue(3)">
+                <input type="button" class="button operator" name="add" value="+" onclick="insertValue('+')">
             </div>
             <div class="section-row">
-                <input type="button" class="button number" name="zero" value="0" onclick="enterValue('0')">
-                <input type="button" class="button number" name="decimal" value="." onclick="enterValue('.')">
+                <input type="button" class="button number" name="zero" value="0" onclick="insertValue(0)">
+                <input type="button" class="button number" name="decimal" value="." onclick="insertValue('.')">
                 <input type="button" class="button number" name="negateButton" value="+/-" onclick="" title="Negate the displayed Value">
-                <input type="button" class="button number" name="equalsTo" value="=" onclick="" title="Execute the Calculation (press =)">
+                <input type="button" class="button number" name="equalsTo" value="=" onclick="equal()" title="Execute the Calculation (press =)">
             </div>
             <div class="section-row">
-                <input type="button" class="button number" name="PI" value="π" onclick="">
-                <input type="button" class="button number" name="square" value="x²" onclick="">
-                <input type="button" class="button number" name="zero" value="R2" onclick="" title="Round display to 2 decimal places">
-                <input type="button" class="button number" name="decimal" value="R0" onclick="" title="Round display to 0 decimal places">
+                <input type="button" class="button number" name="PI" value="π" onclick="insertValue(3.14)">
+                <input type="button" class="button number" name="square" value="x²" onclick="insertValue('**2')">
+                <input type="button" class="button number" name="zero" value="R2" onclick="roundTwo()" title="Round display to 2 decimal places">
+                <input type="button" class="button number" name="decimal" value="R0" onclick="roundZero()" title="Round display to 0 decimal places">
             </div>
         </div>
     </div>
